@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Bán Hàng</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      }
+      body {
+        height: auto;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .header {
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        z-index: 2;
+      }
+      .header-thongbao {
+        height: 40px;
+        text-align: center;
+        background-color: lightseagreen;
+        color: white;
+        line-height: 40px;
+      }
+
+      .nav {
+        height: 70px;
+        background-color: rgb(207, 221, 218);
+        position: relative;
+      }
+
+      .nav-logo img {
+        width: 70px;
+        position: absolute;
+        top: 5px;
+        left: 80px;
+      }
+      .nav-menu {
+        position: absolute;
+        top: 10px;
+        right: 400px;
+      }
+      .nav-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: block;
+      }
+      .nav-menu ul li {
+        display: inline-block;
+      }
+      .nav-menu ul li a {
+        text-decoration: none;
+        color: black;
+        line-height: 50px;
+        margin: 0 30px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      .nav-menu ul li:hover {
+        background-color: lightseagreen;
+        border-radius: 30px;
+        transition: all 0.5s linear;
+      }
+      .nav-menu ul li:hover a {
+        color: white;
+        font-weight: bold;
+        transition: all 0.5s linear;
+      }
+      .banner {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 130px;
+      }
+      .banner img {
+        max-width: 100%;
+        border-radius: 30px;
+        background-size: cover;
+        object-fit: cover;
+      }
+
+      .thongbao {
+        font-size: 30px;
+        color: lightseagreen;
+        text-align: center;
+        margin: 40px 0;
+        font-weight: bold;
+        position: relative;
+      }
+      .thongbao::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 5px;
+        background-color: lightseagreen;
+        top: 50px;
+        left: 46%;
+        z-index: 1;
+      }
+
+      .product .list-product .product-item {
+        width: 21%;
+        display: inline-block;
+        margin: 20px 25px;
+      }
+      .product .list-product .product-item img {
+        max-width: 100%;
+      }
+      .footer {
+        width: 100%;
+        background-color: lightseagreen;
+        color: white;
+      }
+      .footer .item {
+        width: 30%;
+        display: inline-block;
+        text-align: center;
+      }
+      .footer .item h3 {
+        margin: 30px 0;
+      }
+      .footer .footer-link a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        margin: 5px 0;
+      }
+      .end {
+        background-color: lightseagreen;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .end p {
+        margin-top: 10px;
+      }
+    </style>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-thongbao">
+          <p>
+            <i class="bx bx-volume-full"></i> Do Tình Hình Dịch Kéo Dài Nên Bị
+            Chậm Trễ Từ 3 Đến 5 Ngày
+          </p>
+        </div>
+
+        <div class="nav">
+          <div class="nav-logo">
+            <img
+              src="https://kingmensport.vn/wp-content/uploads/2019/09/logo-chat.png"
+              alt=""
+            />
+          </div>
+          <div class="nav-menu">
+            <ul>
+              <li><a href="index.html">Trang Chủ</a></li>
+              <li><a href="gioithieu.html">Giới Thiệu</a></li>
+              <li><a href="sanpham.html">Sản Phẩm</a></li>
+              <li><a href="tintuc.html">Tin Tức</a></li>
+              <li><a href="dangky.html">Đăng Ký</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner">
+        <img
+          src="https://file.hstatic.net/200000312481/file/z3426119733061_88cde42f59145735fb392db4d82d8abd_8633e63f9c71496098810dbffcfbf8d8.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="product">
+        <h3 class="thongbao">
+          Sản Phẩm Bán Chạy Nhất <i class="bx bxs-hot"></i>
+        </h3>
+
+        <div class="list-product">
+          <div class="product-item">
+            <img
+              src="https://product.hstatic.net/200000445353/product/ork302-1_e94d89b073334fc483b34942748ebe63_master.jpg"
+              alt=""
+            />
+            <p>Basic Polo / Green Color</p>
+            <b>208,000₫</b>
+          </div>
+
+          <div class="product-item">
+            <img
+              src="https://product.hstatic.net/200000445353/product/8_00cc9415a4004d96b6547d6c6d2449a4_master.jpg"
+              alt=""
+            />
+            <p>Bazic Tee v2.0 / DodgerBlue Color</p>
+            <b>180,000₫</b>
+          </div>
+
+          <div class="product-item">
+            <img
+              src="https://product.hstatic.net/200000445353/product/2__3__9db8706d892146a69d1f691166d82230_master.jpg"
+              alt=""
+            />
+            <p>Bazic Tee v2.0 / Grey Color</p>
+            <b>180,000₫</b>
+          </div>
+
+          <div class="product-item">
+            <img
+              src="https://product.hstatic.net/200000312481/product/upload_eddafa1e597944fa8a7875166b1cbd69_grande.jpg"
+              alt=""
+            />
+            <p>Basic Tee Ver 2.0 - Black</p>
+            <b>180,000₫</b>
+          </div>
+
+          <div class="product-item">
+            <img
+              src="https://product.hstatic.net/200000312481/product/upload_d23d697f3ed541cbb15ab88333ff6a4a_grande.jpg"
+              alt=""
+            />
+            <p>Basic Polo / Green Color</p>
+            <b>208,000₫</b>
+          </div>
+
+          <div class="product-item">
+            <img
+              src="https://product.hstatic.net/200000312481/product/upload_389210765f204899b7509b2e27536541_grande.jpg"
+              alt=""
+            />
+            <p>Bazic Tee v2.0 / DodgerBlue Color</p>
+            <b>180,000₫</b>
+          </div>
+
+          <div class="product-item">
+            <img
+              src="https://product.hstatic.net/200000445353/product/ork201-1_15161479694344f79d4eead722b7f3de_master.jpg"
+              alt=""
+            />
+            <p>Bazic Tee v2.0 / Grey Color</p>
+            <b>180,000₫</b>
+          </div>
+
+          <div class="product-item">
+            <img
+              src="https://product.hstatic.net/200000445353/product/ork203-1_faffc23d10e9412782c454c01b49ddd6_master.jpg"
+              alt=""
+            />
+            <p>Half Tee v2.0 / Purple Color</p>
+            <b>180,000₫</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-left item">
+          <h3>Giới Thiệu</h3>
+          <p>
+            Chúng tôi xuất hiện để đêm tới mọi người ột chất lượng tốt nhất với
+            giá thành hấp dẫn nhất để đưa Outerity đến với tất cả lứa tuổi vàgiá
+            thành hấp dẫn nhất để đưa Outerity đến với tất cả lứa tuổi và khắp
+            mọi vùng miền đất nước
+          </p>
+        </div>
+
+        <div class="footer-link item">
+          <h3>Liên Kết</h3>
+          <a href="">Giới thiệu</a>
+          <a href="">Chính sách đổi trả</a>
+          <a href="">Chính sách bảo mật</a>
+          <a href="">Điều khoản dịch vụ</a>
+        </div>
+
+        <div class="footer-thongtin item">
+          <h3>Thông tin liên hệ</h3>
+          <p><i class="bx bx-map"></i> TP.HCM</p>
+          <p><i class="bx bx-phone-call"></i> 086 2642568</p>
+          <p><i class="bx bx-buildings"></i> coming soon</p>
+          <p><i class="bx bxl-gmail"></i> outerity.local@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="end">
+        <hr />
+        <p>Copyright © 2022 Outerity. Powered by Haravan</p>
+      </div>
+    </div>
+  </body>
+</html>
